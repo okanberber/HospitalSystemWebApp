@@ -57,3 +57,5 @@ C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\Hos
 C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\HospitalSystemWebApp\obj\Debug\Hospital.4C116437.Up2Date
 C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\HospitalSystemWebApp\obj\Debug\HospitalSystemWebApp.dll
 C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\HospitalSystemWebApp\obj\Debug\HospitalSystemWebApp.pdb
+C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\HospitalSystemWebApp\bin\DataAccessLayer.dll
+C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\HospitalSystemWebApp\bin\DataAccessLayer.pdb

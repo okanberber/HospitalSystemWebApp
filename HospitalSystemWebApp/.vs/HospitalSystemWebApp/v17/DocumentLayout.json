@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9058673A-FE79-40F3-B8D2-B8392016465E}|HospitalSystemWebApp\\HospitalSystemWebApp.csproj|c:\\users\\okanb\\onedrive\\masa\u00FCst\u00FC\\hospitalsystemwebapp\\hospitalsystemwebapp\\hospitalsystemwebapp\\adminpanel\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{9058673A-FE79-40F3-B8D2-B8392016465E}|HospitalSystemWebApp\\HospitalSystemWebApp.csproj|solutionrelative:hospitalsystemwebapp\\adminpanel\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{9058673A-FE79-40F3-B8D2-B8392016465E}|HospitalSystemWebApp\\HospitalSystemWebApp.csproj|c:\\users\\okanb\\onedrive\\masa\u00FCst\u00FC\\hospitalsystemwebapp\\hospitalsystemwebapp\\hospitalsystemwebapp\\adminpanel\\adminmaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{9058673A-FE79-40F3-B8D2-B8392016465E}|HospitalSystemWebApp\\HospitalSystemWebApp.csproj|solutionrelative:hospitalsystemwebapp\\adminpanel\\adminmaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9058673A-FE79-40F3-B8D2-B8392016465E}|HospitalSystemWebApp\\HospitalSystemWebApp.csproj|c:\\users\\okanb\\onedrive\\masa\u00FCst\u00FC\\hospitalsystemwebapp\\hospitalsystemwebapp\\hospitalsystemwebapp\\adminpanel\\css\\logincss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{9058673A-FE79-40F3-B8D2-B8392016465E}|HospitalSystemWebApp\\HospitalSystemWebApp.csproj|solutionrelative:hospitalsystemwebapp\\adminpanel\\css\\logincss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{9058673A-FE79-40F3-B8D2-B8392016465E}|HospitalSystemWebApp\\HospitalSystemWebApp.csproj|c:\\users\\okanb\\onedrive\\masa\u00FCst\u00FC\\hospitalsystemwebapp\\hospitalsystemwebapp\\hospitalsystemwebapp\\adminpanel\\css\\adminmastercss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9058673A-FE79-40F3-B8D2-B8392016465E}|HospitalSystemWebApp\\HospitalSystemWebApp.csproj|solutionrelative:hospitalsystemwebapp\\adminpanel\\css\\adminmastercss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9058673A-FE79-40F3-B8D2-B8392016465E}|HospitalSystemWebApp\\HospitalSystemWebApp.csproj|c:\\users\\okanb\\onedrive\\masa\u00FCst\u00FC\\hospitalsystemwebapp\\hospitalsystemwebapp\\hospitalsystemwebapp\\adminpanel\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9058673A-FE79-40F3-B8D2-B8392016465E}|HospitalSystemWebApp\\HospitalSystemWebApp.csproj|solutionrelative:hospitalsystemwebapp\\adminpanel\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A874602F-A81C-49D0-AC8F-5050531375C6}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\dataaccesslayer\\datamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A874602F-A81C-49D0-AC8F-5050531375C6}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\datamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,39 +25,65 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 248,
+          "DockedWidth": 261,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LoginCss.css",
-              "DocumentMoniker": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\HospitalSystemWebApp\\AdminPanel\\Css\\LoginCss.css",
-              "RelativeDocumentMoniker": "HospitalSystemWebApp\\AdminPanel\\Css\\LoginCss.css",
-              "ToolTip": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\HospitalSystemWebApp\\AdminPanel\\Css\\LoginCss.css",
-              "RelativeToolTip": "HospitalSystemWebApp\\AdminPanel\\Css\\LoginCss.css",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAC4AAAAUAAAA",
+              "Title": "AdminMasterCss.css",
+              "DocumentMoniker": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\HospitalSystemWebApp\\AdminPanel\\Css\\AdminMasterCss.css",
+              "RelativeDocumentMoniker": "HospitalSystemWebApp\\AdminPanel\\Css\\AdminMasterCss.css",
+              "ToolTip": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\HospitalSystemWebApp\\AdminPanel\\Css\\AdminMasterCss.css",
+              "RelativeToolTip": "HospitalSystemWebApp\\AdminPanel\\Css\\AdminMasterCss.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-02T16:39:43.454Z",
+              "WhenOpened": "2024-10-04T15:29:05.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataModel.cs",
+              "DocumentMoniker": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\DataAccessLayer\\DataModel.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DataModel.cs",
+              "ToolTip": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\DataAccessLayer\\DataModel.cs",
+              "RelativeToolTip": "DataAccessLayer\\DataModel.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCEAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T20:04:15.504Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 466,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 479,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\HospitalSystemWebApp\\AdminPanel\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "HospitalSystemWebApp\\AdminPanel\\Login.aspx.cs",
+              "ToolTip": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\HospitalSystemWebApp\\AdminPanel\\Login.aspx.cs",
+              "RelativeToolTip": "HospitalSystemWebApp\\AdminPanel\\Login.aspx.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T17:21:40.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Login.aspx",
-              "DocumentMoniker": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\HospitalSystemWebApp\\AdminPanel\\Login.aspx",
-              "RelativeDocumentMoniker": "HospitalSystemWebApp\\AdminPanel\\Login.aspx",
-              "ToolTip": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\HospitalSystemWebApp\\AdminPanel\\Login.aspx",
-              "RelativeToolTip": "HospitalSystemWebApp\\AdminPanel\\Login.aspx",
+              "Title": "AdminMaster.Master",
+              "DocumentMoniker": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\HospitalSystemWebApp\\AdminPanel\\AdminMaster.Master",
+              "RelativeDocumentMoniker": "HospitalSystemWebApp\\AdminPanel\\AdminMaster.Master",
+              "ToolTip": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\HospitalSystemWebApp\\AdminPanel\\AdminMaster.Master",
+              "RelativeToolTip": "HospitalSystemWebApp\\AdminPanel\\AdminMaster.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-10-02T16:39:26.795Z",
+              "WhenOpened": "2024-10-04T15:26:10.86Z",
               "EditorCaption": ""
             }
           ]

@@ -67,12 +67,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminPanel\AdminDefault.aspx" />
+    <Content Include="AdminPanel\Css\AdminMasterCss.css" />
     <Content Include="AdminPanel\Css\LoginCss.css" />
+    <Content Include="AdminPanel\Images\medicine-symbol-logo-C5F32D7618-seeklogo.com.png" />
     <Content Include="AdminPanel\Images\pngwing.com.png" />
+    <Content Include="AdminPanel\Images\vecteezy_ai-generated-national-doctors-day-advertisment-background_37247199.jpg" />
     <Content Include="AdminPanel\Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminPanel\AdminDefault.aspx.cs">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\AdminDefault.aspx.designer.cs">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
     <Compile Include="AdminPanel\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -83,6 +101,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminPanel\AdminMaster.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -90,6 +109,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{a874602f-a81c-49d0-ac8f-5050531375c6}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

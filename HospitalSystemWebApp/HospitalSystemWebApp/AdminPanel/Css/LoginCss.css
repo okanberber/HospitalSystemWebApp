@@ -2,15 +2,15 @@
     margin:0;padding:0;
 }
 body {
+    background-image: url('../images/vecteezy_ai-generated-national-doctors-day-advertisment-background_37247199.jpg');
     font-family: Calibri;
-    background-image: linear-gradient(to right top, #d094ff, #be7ffe, #aa6bfe, #9257fe, #7444ff);
+    background-size:100%;
+    background-attachment:fixed;
     background-repeat:no-repeat;
-    height:89vh;
-
 }
 
 .main {
-    background-color:#d4d4d4;
+    background-color:white;
     width: 500px;
     height: 700px;
     margin-left: auto;
@@ -30,16 +30,17 @@ text-align:center;
 padding:10px 0px;
 
 }
-.box{
-    border-radius:20px;
-    border:none;
-    width:300px;
-    height:30px;
-    padding-left:15px;
+.box {
+    background-color:#d4d4d4;
+    border-radius: 20px;
+    border-color:cornflowerblue;
+    width: 300px;
+    height: 30px;
+    padding-left: 15px;
 }
 .button {
     color: black;
-    background-color: #efefef;
+    background-color: cornflowerblue;
     text-decoration: none;
     border-radius: 20px;
     padding: 10px 80px;
@@ -50,4 +51,8 @@ padding:10px 0px;
         background-image: linear-gradient(to right top, #d094ff, #be7ffe, #aa6bfe, #9257fe, #7444ff);
         color:white;
         
+    }
+    .basarisizPanel{
+        border-radius:20px;
+        color:red;
     }

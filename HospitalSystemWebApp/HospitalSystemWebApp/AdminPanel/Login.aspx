@@ -14,7 +14,7 @@
             <div class="line">
                 <br />
                 <br />
-                <h1>Admin Login</h1>
+                <h1 style="color:mediumpurple">Admin Login</h1>
             </div>
             <div class="line">
                 <img style="width: 300px" src="Images/pngwing.com.png" />
@@ -25,9 +25,11 @@
                     <asp:TextBox ID="tb_password" runat="server" CssClass="box" placeholder="password"></asp:TextBox>
                 </div>
                 <br />
-                <br />
+               <asp:Panel ID="pnl_basarisiz" runat="server" CssClass="basarisizPanel" Visible="false"><strong>Başarısız !</strong>
+                   <asp:Label ID="lbl_mesaj" runat="server">Mail Boş Bırakılamaz</asp:Label>
+               </asp:Panel>
                 <div class="line">
-                    <asp:LinkButton ID="lbtn_login" runat="server" CssClass="button">Login</asp:LinkButton>
+                    <asp:LinkButton ID="lbtn_login" runat="server" CssClass="button" OnClick="lbtn_login_Click">Login</asp:LinkButton>
                 </div>
             </div>
             <div style="clear: both"></div>
