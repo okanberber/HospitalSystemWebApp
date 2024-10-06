@@ -1,12 +1,122 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{70FAC79A-8DBC-4CC2-98CD-67120C0505D1}|VeriErisimKatmani\\VeriErisimKatmani.csproj|c:\\users\\okanb\\onedrive\\masa\u00FCst\u00FC\\hospitalsystemwebapp\\hospitalsystemwebapp\\verierisimkatmani\\verimodeli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70FAC79A-8DBC-4CC2-98CD-67120C0505D1}|VeriErisimKatmani\\VeriErisimKatmani.csproj|solutionrelative:verierisimkatmani\\verimodeli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70FAC79A-8DBC-4CC2-98CD-67120C0505D1}|VeriErisimKatmani\\VeriErisimKatmani.csproj|c:\\users\\okanb\\onedrive\\masa\u00FCst\u00FC\\hospitalsystemwebapp\\hospitalsystemwebapp\\verierisimkatmani\\hastalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70FAC79A-8DBC-4CC2-98CD-67120C0505D1}|VeriErisimKatmani\\VeriErisimKatmani.csproj|solutionrelative:verierisimkatmani\\hastalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3454B6-F987-4D9A-BAD2-05418B262F7B}|HospitalSystemWebApp\\HospitalSystemWebApp.csproj|c:\\users\\okanb\\onedrive\\masa\u00FCst\u00FC\\hospitalsystemwebapp\\hospitalsystemwebapp\\hospitalsystemwebapp\\yoneticipaneli\\hastaislemleri.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3454B6-F987-4D9A-BAD2-05418B262F7B}|HospitalSystemWebApp\\HospitalSystemWebApp.csproj|solutionrelative:hospitalsystemwebapp\\yoneticipaneli\\hastaislemleri.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3454B6-F987-4D9A-BAD2-05418B262F7B}|HospitalSystemWebApp\\HospitalSystemWebApp.csproj|c:\\users\\okanb\\onedrive\\masa\u00FCst\u00FC\\hospitalsystemwebapp\\hospitalsystemwebapp\\hospitalsystemwebapp\\yoneticipaneli\\hastaislemleri.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{4A3454B6-F987-4D9A-BAD2-05418B262F7B}|HospitalSystemWebApp\\HospitalSystemWebApp.csproj|solutionrelative:hospitalsystemwebapp\\yoneticipaneli\\hastaislemleri.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3454B6-F987-4D9A-BAD2-05418B262F7B}|HospitalSystemWebApp\\HospitalSystemWebApp.csproj|c:\\users\\okanb\\onedrive\\masa\u00FCst\u00FC\\hospitalsystemwebapp\\hospitalsystemwebapp\\hospitalsystemwebapp\\yoneticipaneli\\css\\hastacss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4A3454B6-F987-4D9A-BAD2-05418B262F7B}|HospitalSystemWebApp\\HospitalSystemWebApp.csproj|solutionrelative:hospitalsystemwebapp\\yoneticipaneli\\css\\hastacss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A3454B6-F987-4D9A-BAD2-05418B262F7B}|HospitalSystemWebApp\\HospitalSystemWebApp.csproj|c:\\users\\okanb\\onedrive\\masa\u00FCst\u00FC\\hospitalsystemwebapp\\hospitalsystemwebapp\\hospitalsystemwebapp\\yoneticipaneli\\doktorislemleri.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3454B6-F987-4D9A-BAD2-05418B262F7B}|HospitalSystemWebApp\\HospitalSystemWebApp.csproj|solutionrelative:hospitalsystemwebapp\\yoneticipaneli\\doktorislemleri.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1021,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DoktorIslemleri.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\HospitalSystemWebApp\\YoneticiPaneli\\DoktorIslemleri.aspx.cs",
+              "RelativeDocumentMoniker": "HospitalSystemWebApp\\YoneticiPaneli\\DoktorIslemleri.aspx.cs",
+              "ToolTip": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\HospitalSystemWebApp\\YoneticiPaneli\\DoktorIslemleri.aspx.cs",
+              "RelativeToolTip": "HospitalSystemWebApp\\YoneticiPaneli\\DoktorIslemleri.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T18:12:23.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HastaIslemleri.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\HospitalSystemWebApp\\YoneticiPaneli\\HastaIslemleri.aspx.cs",
+              "RelativeDocumentMoniker": "HospitalSystemWebApp\\YoneticiPaneli\\HastaIslemleri.aspx.cs",
+              "ToolTip": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\HospitalSystemWebApp\\YoneticiPaneli\\HastaIslemleri.aspx.cs",
+              "RelativeToolTip": "HospitalSystemWebApp\\YoneticiPaneli\\HastaIslemleri.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T18:12:03.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Hastalar.cs",
+              "DocumentMoniker": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\VeriErisimKatmani\\Hastalar.cs",
+              "RelativeDocumentMoniker": "VeriErisimKatmani\\Hastalar.cs",
+              "ToolTip": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\VeriErisimKatmani\\Hastalar.cs",
+              "RelativeToolTip": "VeriErisimKatmani\\Hastalar.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T18:11:44.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VeriModeli.cs",
+              "DocumentMoniker": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\VeriErisimKatmani\\VeriModeli.cs",
+              "RelativeDocumentMoniker": "VeriErisimKatmani\\VeriModeli.cs",
+              "ToolTip": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\VeriErisimKatmani\\VeriModeli.cs",
+              "RelativeToolTip": "VeriErisimKatmani\\VeriModeli.cs",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAAwOQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T18:03:16.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HastaCss.css",
+              "DocumentMoniker": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\HospitalSystemWebApp\\YoneticiPaneli\\Css\\HastaCss.css",
+              "RelativeDocumentMoniker": "HospitalSystemWebApp\\YoneticiPaneli\\Css\\HastaCss.css",
+              "ToolTip": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\HospitalSystemWebApp\\YoneticiPaneli\\Css\\HastaCss.css",
+              "RelativeToolTip": "HospitalSystemWebApp\\YoneticiPaneli\\Css\\HastaCss.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-06T18:01:41.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HastaIslemleri.aspx",
+              "DocumentMoniker": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\HospitalSystemWebApp\\YoneticiPaneli\\HastaIslemleri.aspx",
+              "RelativeDocumentMoniker": "HospitalSystemWebApp\\YoneticiPaneli\\HastaIslemleri.aspx",
+              "ToolTip": "C:\\Users\\okanb\\OneDrive\\Masa\u00FCst\u00FC\\HospitalSystemWebApp\\HospitalSystemWebApp\\HospitalSystemWebApp\\YoneticiPaneli\\HastaIslemleri.aspx",
+              "RelativeToolTip": "HospitalSystemWebApp\\YoneticiPaneli\\HastaIslemleri.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-06T14:03:05.433Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

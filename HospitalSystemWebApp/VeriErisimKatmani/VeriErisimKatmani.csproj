@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaglantiYollari.cs" />
+    <Compile Include="Doktorlar.cs" />
+    <Compile Include="Hastalar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VeriModeli.cs" />
     <Compile Include="Yonetici.cs" />

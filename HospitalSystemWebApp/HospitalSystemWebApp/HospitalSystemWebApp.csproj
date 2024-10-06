@@ -68,8 +68,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
+    <Content Include="YoneticiPaneli\Css\DoktorCss.css" />
     <Content Include="YoneticiPaneli\Css\GirisCss.css" />
+    <Content Include="YoneticiPaneli\Css\HastaCss.css" />
     <Content Include="YoneticiPaneli\Css\YoneticiCss.css" />
+    <Content Include="YoneticiPaneli\DoktorIslemleri.aspx" />
+    <Content Include="YoneticiPaneli\HastaIslemleri.aspx" />
     <Content Include="YoneticiPaneli\Resimler\medicine-symbol-logo-C5F32D7618-seeklogo.com.png" />
     <Content Include="YoneticiPaneli\Resimler\pngwing.com.png" />
     <Content Include="YoneticiPaneli\Resimler\vecteezy_ai-generated-national-doctors-day-advertisment-background_37247199.jpg" />
@@ -84,6 +88,20 @@
     </Compile>
     <Compile Include="YoneticiMaster.Master.designer.cs">
       <DependentUpon>YoneticiMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiPaneli\DoktorIslemleri.aspx.cs">
+      <DependentUpon>DoktorIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YoneticiPaneli\DoktorIslemleri.aspx.designer.cs">
+      <DependentUpon>DoktorIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiPaneli\HastaIslemleri.aspx.cs">
+      <DependentUpon>HastaIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YoneticiPaneli\HastaIslemleri.aspx.designer.cs">
+      <DependentUpon>HastaIslemleri.aspx</DependentUpon>
     </Compile>
     <Compile Include="YoneticiPaneli\YoneticiDefault.aspx.cs">
       <DependentUpon>YoneticiDefault.aspx</DependentUpon>

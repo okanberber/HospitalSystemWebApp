@@ -12,31 +12,30 @@
 <body>
     <form id="form1" runat="server">
         <div class="ustcubuk">
-    <div class="anamenu">
-        <img style="float: left; width: 80px; padding-left: 10px;" src="Resimler/medicine-symbol-logo-C5F32D7618-seeklogo.com.png" />
-        <h1 style="padding-top: 8px; font-size: 20pt; padding-left: 110px;">Hospital</h1>
-        <h1 style="font-size: 20pt; padding-left: 160px;">System</h1>
-    </div>
-    <div>
-        <asp:LinkButton ID="lbtn_cikis" runat="server" CssClass="cikisyap" OnClick="lbtn_cikis_Click">Çıkış Yap</asp:LinkButton>
-    </div>
-</div>
+            <div class="anamenu">
+                <img style="float: left; width: 80px; padding-left: 10px;" src="Resimler/medicine-symbol-logo-C5F32D7618-seeklogo.com.png" />
+                <h1 style="padding-top: 8px; font-size: 20pt; padding-left: 110px;">Hospital</h1>
+                <h1 style="font-size: 20pt; padding-left: 160px;">System</h1>
+            </div>
+            <div>
+                <asp:LinkButton ID="lbtn_cikis" runat="server" CssClass="cikisyap" OnClick="lbtn_cikis_Click">Çıkış Yap</asp:LinkButton>
+            </div>
+        </div>
 
-<div class="navigasyon">
-    <a href="#">Doktorlar</a>
-    <hr />
-    <a href="#">Hastalar</a>
-    <hr />
-    <a href="#">Eczacılar</a>
-    <hr />
-    <a href="#">Hastalıklar</a>
-    <hr />
-    <a href="#">Reçeteler</a>
-    <hr />
-    <a href="#">İlaçlar</a>
-
-</div>
-<div>
+        <div class="navigasyon">
+            <a href="DoktorIslemleri.aspx">Doktorlar</a>
+            <hr />
+            <a href="HastaIslemleri.aspx">Hastalar</a>
+            <hr />
+            <a href="#">Eczacılar</a>
+            <hr />
+            <a href="#">Hastalıklar</a>
+            <hr />
+            <a href="#">Reçeteler</a>
+            <hr />
+            <a href="#">İlaçlar</a>
+        </div>
+        <div class="anaicerik">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>

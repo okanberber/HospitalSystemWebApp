@@ -27,6 +27,7 @@ body {
     height: 834px;
     margin-top: 5px;
     border-top-right-radius: 10px;
+    float:left;
 }
 
     .navigasyon a {
@@ -53,3 +54,6 @@ body {
     .cikisyap:hover {
         text-decoration: underline;
     }
+.anaicerik{
+
+}
