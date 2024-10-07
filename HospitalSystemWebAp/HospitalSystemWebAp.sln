@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalSystemWebApp", "HospitalSystemWebApp\HospitalSystemWebApp.csproj", "{4A3454B6-F987-4D9A-BAD2-05418B262F7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeriErisimKatmani", "VeriErisimKatmani\VeriErisimKatmani.csproj", "{70FAC79A-8DBC-4CC2-98CD-67120C0505D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A3454B6-F987-4D9A-BAD2-05418B262F7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A3454B6-F987-4D9A-BAD2-05418B262F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A3454B6-F987-4D9A-BAD2-05418B262F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A3454B6-F987-4D9A-BAD2-05418B262F7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70FAC79A-8DBC-4CC2-98CD-67120C0505D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70FAC79A-8DBC-4CC2-98CD-67120C0505D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70FAC79A-8DBC-4CC2-98CD-67120C0505D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70FAC79A-8DBC-4CC2-98CD-67120C0505D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3937D44-2E19-48C3-AD1D-9EE56B78E4F4}
+	EndGlobalSection
+EndGlobal

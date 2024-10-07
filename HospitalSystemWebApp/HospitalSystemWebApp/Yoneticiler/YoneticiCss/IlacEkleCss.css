@@ -1,0 +1,62 @@
+﻿*, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Calibri
+}
+
+.baslik {
+    background-color: #0094ff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.sutun {
+    float: left;
+    padding: 5px 80px;
+    background-color: #808080;
+    margin-bottom: 5px;
+}
+
+.buton {
+    float: left;
+    margin-left: 30px;
+    padding: 5px;
+}
+
+.btncss {
+    padding: 10px 25px;
+}
+
+
+.tablo {
+    width: 1500px;
+}
+
+    .tablo tr {
+    }
+
+        .tablo tr th {
+            background-color: #0094ff;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid silver;
+        }
+
+        .tablo tr td {
+            border: 1px solid silver;
+            padding: 10px;
+        }
+
+            .tablo tr td a {
+                background-color: #0094ff;
+                border-radius: 5px;
+                text-decoration: none;
+                padding: 5px;
+                color: black;
+                font-weight: 600;
+            }

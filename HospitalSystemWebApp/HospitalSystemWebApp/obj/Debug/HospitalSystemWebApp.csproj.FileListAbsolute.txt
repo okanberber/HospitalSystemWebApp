@@ -51,11 +51,11 @@ C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\Hos
 C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\HospitalSystemWebApp\bin\roslyn\VBCSCompiler.exe
 C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\HospitalSystemWebApp\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\HospitalSystemWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\HospitalSystemWebApp\bin\VeriErisimKatmani.dll
-C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\HospitalSystemWebApp\bin\VeriErisimKatmani.pdb
 C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\HospitalSystemWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\HospitalSystemWebApp\obj\Debug\HospitalSystemWebApp.csproj.AssemblyReference.cache
 C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\HospitalSystemWebApp\obj\Debug\HospitalSystemWebApp.csproj.CoreCompileInputs.cache
 C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\HospitalSystemWebApp\obj\Debug\Hospital.4C116437.Up2Date
 C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\HospitalSystemWebApp\obj\Debug\HospitalSystemWebApp.dll
 C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\HospitalSystemWebApp\obj\Debug\HospitalSystemWebApp.pdb
+C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\HospitalSystemWebApp\bin\VeriErisimKatmani.dll
+C:\Users\okanb\OneDrive\Masaüstü\HospitalSystemWebApp\HospitalSystemWebApp\HospitalSystemWebApp\bin\VeriErisimKatmani.pdb

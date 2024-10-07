@@ -16,7 +16,9 @@ namespace VeriErisimKatmani
             baglanti = new SqlConnection(BaglantiYollari.connect);
             komut = baglanti.CreateCommand();
         }
+
         #region Yönetici Metotları
+
         public Yonetici YoneticiGiris(string mail,string sifre)
         {
             try
@@ -29,7 +31,7 @@ namespace VeriErisimKatmani
                 int sayi = Convert.ToInt32(komut.ExecuteScalar());
                 if (sayi == 1)
                 {
-                    komut.CommandText = "SELECT ID,Isim,Soyisim,TelNo,Mail,Sifre,Durum,Silinmis FROM Yoneticiler WHERE Mail = @mail AND Sifre = @sifre";
+                    komut.CommandText = "SELECT ID,Isim,Soyisim,TelNo,Mail,Sifre FROM Yoneticiler WHERE Mail = @mail AND Sifre = @sifre";
                     komut.Parameters.Clear();
                     komut.Parameters.AddWithValue("@mail", mail);
                     komut.Parameters.AddWithValue("@sifre", sifre);
@@ -41,11 +43,9 @@ namespace VeriErisimKatmani
                         Y.ID = okuyucu.GetInt32(0);
                         Y.Isim = okuyucu.GetString(1);
                         Y.Soyisim = okuyucu.GetString(2);
-                        Y.TelNo = okuyucu.GetString(3);
+                        Y.Telefon = okuyucu.GetString(3);
                         Y.Mail = okuyucu.GetString(4);
                         Y.Sifre = okuyucu.GetString(5);
-                        Y.Durum = okuyucu.GetBoolean(6);
-                        Y.Silinmis = okuyucu.GetBoolean(7);
 
                     }
                     return Y;
@@ -64,57 +64,29 @@ namespace VeriErisimKatmani
                 baglanti.Close();
             }
         }
-        public bool DoktorEkle(Doktorlar dok)
+        public List<Doktor> DoktorListele()
         {
+            List<Doktor> doktorlar = new List<Doktor>();
             try
             {
-                komut.CommandText = "INSERT INTO Doktorlar (Isim,Soyisim,TelNo,Alani,Mail,Sifre,Durum,Silinmis) VALUES (@isim,@soyisim,@telno,@alan,@mail,@sifre,@durum,@silinmis)";
-                komut.Parameters.Clear();
-                komut.Parameters.AddWithValue("@isim", dok.Isim);
-                komut.Parameters.AddWithValue("@soyisim", dok.Soyisim);
-                komut.Parameters.AddWithValue("@telno", dok.TelNo);
-                komut.Parameters.AddWithValue("@alan", dok.Alani);
-                komut.Parameters.AddWithValue("@mail", dok.Mail);
-                komut.Parameters.AddWithValue("@sifre", dok.Sifre);
-                komut.Parameters.AddWithValue("@durum", dok.Durum);
-                komut.Parameters.AddWithValue("@silinmis", dok.Silinmis);
-                baglanti.Open();
-                komut.ExecuteNonQuery();
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-            finally
-            {
-                baglanti.Close ();
-            }
-        }
-        public List<Doktorlar> DoktorListele()
-        {
-            List<Doktorlar> doktor= new List<Doktorlar>();
-            try
-            {
-                komut.CommandText = "SELECT ID,Isim,Soyisim,TelNo,Alani,Mail,Sifre,Durum,Silinmis FROM Doktorlar";
+                komut.CommandText = "SELECT ID,Isim,Soyisim,Alani,TelNo,Mail,Sifre FROM Doktorlar";
                 komut.Parameters.Clear();
                 baglanti.Open();
-                SqlDataReader okuyucu = komut.ExecuteReader();
+                SqlDataReader okuyucu=komut.ExecuteReader();
                 while (okuyucu.Read())
                 {
-                    Doktorlar dok = new Doktorlar();
+                    Doktor dok = new Doktor();
                     dok.ID = okuyucu.GetInt32(0);
                     dok.Isim = okuyucu.GetString(1);
                     dok.Soyisim = okuyucu.GetString(2);
-                    dok.TelNo = okuyucu.GetString(3);
-                    dok.Alani = okuyucu.GetString(4);
+                    dok.Alani = okuyucu.GetString(3);
+                    dok.TelNo = okuyucu.GetString(4);
                     dok.Mail = okuyucu.GetString(5);
                     dok.Sifre = okuyucu.GetString(6);
-                    dok.Durum = okuyucu.GetBoolean(7);
-                    dok.Silinmis = okuyucu.GetBoolean(8);
-                    doktor.Add(dok);
+
+                    doktorlar.Add(dok);
                 }
-                return doktor;
+                return doktorlar;
             }
             catch
             {
@@ -131,7 +103,7 @@ namespace VeriErisimKatmani
             {
                 komut.CommandText = "DELETE FROM Doktorlar WHERE ID=@id";
                 komut.Parameters.Clear();
-                komut.Parameters.AddWithValue("@id", id);
+                komut.Parameters.AddWithValue("@id",id);
                 baglanti.Open();
                 komut.ExecuteNonQuery();
             }
@@ -140,79 +112,57 @@ namespace VeriErisimKatmani
                 baglanti.Close();
             }
         }
-        public void DoktorDurumDegistir(int id)
+        public bool DoktorEkle(Doktor D)
         {
             try
             {
-                komut.CommandText = "SELECT Durum FROM Doktorlar WHERE ID=@id";
+                komut.CommandText = "INSERT INTO Doktorlar (Isim,Soyisim,Alani,TelNo,Mail,Sifre) VALUES(@isim,@soyisim,@alani,@telno,@mail,@sifre)";
                 komut.Parameters.Clear();
-                komut.Parameters.AddWithValue("@id",id);
+                komut.Parameters.AddWithValue("@isim", D.Isim);
+                komut.Parameters.AddWithValue("@soyisim", D.Soyisim);
+                komut.Parameters.AddWithValue("@alani", D.Alani);
+                komut.Parameters.AddWithValue("@telno", D.TelNo);
+                komut.Parameters.AddWithValue("@mail", D.Mail);
+                komut.Parameters.AddWithValue("@sifre", D.Sifre);
                 baglanti.Open();
-                bool durum = Convert.ToBoolean(komut.ExecuteScalar());
-                komut.CommandText = "UPDATE Doktorlar SET Durum = @durum WHERE ID = @id";
-                komut.Parameters.Clear();
-                komut.Parameters.AddWithValue("@durum",!durum);
-                komut.Parameters.AddWithValue("@id", id);
-                komut.ExecuteNonQuery ();
+                komut.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
             }
             finally
             {
                 baglanti.Close() ;
             }
         }
-        public bool DoktorDuzenle(int id, Doktorlar d)
+        public List<Hasta> HastaListele()
         {
+            List<Hasta> hastalar = new List<Hasta>();
             try
             {
-                komut.CommandText="UPDATE Doktorlar SET Isim=@isim, Soyisim=@soyisim, TelNo=@telefon, Alani=@alan, Mail=@mail, Sifre=@sifre, Durum=@durum, Silinmis=@silinmis WHERE ID=@id";
+                komut.CommandText = "SELECT ID,ReceteID,Isim,Soyisim,TCK,TelNo,Sikayet,Teshis,Tarih FROM Hastalar";
                 komut.Parameters.Clear();
-                komut.Parameters.AddWithValue("@id",id);
-                komut.Parameters.AddWithValue("@isim", d.Isim);
-                komut.Parameters.AddWithValue("@soyisim", d.Soyisim);
-                komut.Parameters.AddWithValue("@telefon", d.TelNo);
-                komut.Parameters.AddWithValue("@alan", d.Alani);
-                komut.Parameters.AddWithValue("@mail", d.Mail);
-                komut.Parameters.AddWithValue("@sifre", d.Sifre);
-                komut.Parameters.AddWithValue("@durum", d.Durum);
-                komut.Parameters.AddWithValue("@silinmis", d.Silinmis);
-                baglanti.Open() ;
-                komut.ExecuteNonQuery();
-                return true;
+                baglanti.Open();
+                SqlDataReader okuyucu = komut.ExecuteReader();
+                while (okuyucu.Read())
+                {
+                    Hasta has = new Hasta();
+                    has.ID = okuyucu.GetInt32(0);
+                    has.ReceteID = okuyucu.GetInt32(1);
+                    has.Isim = okuyucu.GetString(2);
+                    has.Soyisim = okuyucu.GetString(3);
+                    has.TCK = okuyucu.GetString(4);
+                    has.TelNo = okuyucu.GetString(5);
+                    has.Sikayet = okuyucu.GetString(6);
+                    has.Teshis = okuyucu.GetString(7);
+                    has.Tarih = okuyucu.GetDateTime(8);
+
+                    hastalar.Add(has);
+                }
+                return hastalar;
             }
-            catch
-            {
-               return false;
-            }
-            finally
-            {
-                baglanti.Close ();
-            }
-        }
-        public List<Hastalar> HastaListele()
-        {
-            List<Hastalar> hasta = new List<Hastalar>();
-            try {
-            komut.CommandText = "SELECT ID,ReceteID,Isim,Soyisim,TCK,TelNo,Sikayet,Teshis,Tarih,Durum,Silinmis FROM Doktorlar";
-            komut.Parameters.Clear();
-            baglanti.Open();
-            SqlDataReader okuyucu = komut.ExecuteReader();
-            while (okuyucu.Read())
-            {
-                Hastalar H = new Hastalar();
-                H.ID = okuyucu.GetInt32(0);
-                H.ReceteID = okuyucu.GetInt32(1);
-                H.Soyisim = okuyucu.GetString(2);
-                H.TCK = okuyucu.GetString(3);
-                H.TelNo = okuyucu.GetString(4);
-                H.Sikayet = okuyucu.GetString(5);
-                H.Teshis = okuyucu.GetString(6);
-                H.Tarih = okuyucu.GetDateTime(7);
-                H.Durum = okuyucu.GetBoolean(8);
-                H.Silinmis = okuyucu.GetBoolean(9);
-                hasta.Add(H);
-            }
-            return hasta;
-        }
             catch
             {
                 return null;
@@ -221,8 +171,252 @@ namespace VeriErisimKatmani
             {
                 baglanti.Close();
             }
-}
+        }
+        public void HastaSil(int id)
+        {
+            try
+            {
+                komut.CommandText = "DELETE FROM Hastalar WHERE ID=@id";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@id", id);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+        public bool HastaEkle(Hasta H)
+        {
+            try
+            {
+                komut.CommandText = "INSERT INTO Hastalar (ReceteID,Isim,Soyisim,TCK,TelNo,Sikayet,Teshis,Tarih) VALUES(@receteid,@isim,@soyisim,@tck,@telno,@sikayet,@teshis,@tarih)";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@receteid", H.ReceteID);
+                komut.Parameters.AddWithValue("@isim", H.Isim);
+                komut.Parameters.AddWithValue("@soyisim", H.Soyisim);
+                komut.Parameters.AddWithValue("@tck", H.TCK);
+                komut.Parameters.AddWithValue("@telno", H.TelNo);
+                komut.Parameters.AddWithValue("@sikayet", H.Sikayet);
+                komut.Parameters.AddWithValue("@teshis", H.Teshis);
+                komut.Parameters.AddWithValue("@tarih", H.Tarih);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+        public bool EczaciEkle(Eczaci E)
+        {
+            try
+            {
+                komut.CommandText = "INSERT INTO Eczacilar (Isim,Soyisim,Mail,Sifre) VALUES(@isim,@soyisim,@mail,@sifre)";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@isim", E.Isim);
+                komut.Parameters.AddWithValue("@soyisim", E.Soyisim);
+                komut.Parameters.AddWithValue("@mail", E.Mail);
+                komut.Parameters.AddWithValue("@sifre", E.Sifre);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+        public List<Eczaci> EczaciListele()
+        {
+            List<Eczaci> eczacilar = new List<Eczaci>();
+            try
+            {
+                komut.CommandText = "SELECT ID,Isim,Soyisim,Mail,Sifre FROM Eczacilar";
+                komut.Parameters.Clear();
+                baglanti.Open();
+                SqlDataReader okuyucu = komut.ExecuteReader();
+                while (okuyucu.Read())
+                {
+                    Eczaci E = new Eczaci();
+                    E.ID = okuyucu.GetInt32(0);
+                    E.Isim = okuyucu.GetString(1);
+                    E.Soyisim = okuyucu.GetString(2);
+                    E.Mail = okuyucu.GetString(3);
+                    E.Sifre = okuyucu.GetString(4);
+
+                    eczacilar.Add(E);
+                }
+                return eczacilar;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+        public void EczaciSil(int id)
+        {
+            try
+            {
+                komut.CommandText = "DELETE FROM Eczacilar WHERE ID=@id";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@id", id);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+        public bool IlacEkle(Ilac I)
+        {
+            try
+            {
+                komut.CommandText = "INSERT INTO Ilaclar (Isim,SKT,Adet,BirimFiyat) VALUES(@isim,@skt,@adet,@birimfiyat)";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@isim", I.Isim);
+                komut.Parameters.AddWithValue("@skt", I.SKT);
+                komut.Parameters.AddWithValue("@adet", I.Adet);
+                komut.Parameters.AddWithValue("@birimfiyat", I.BirimFiyat);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+        public List<Ilac> IlacListele()
+        {
+            List<Ilac> ilaclar = new List<Ilac>();
+            try
+            {
+                komut.CommandText = "SELECT ID,Isim,SKT,Adet,BirimFiyat FROM Ilaclar";
+                komut.Parameters.Clear();
+                baglanti.Open();
+                SqlDataReader okuyucu = komut.ExecuteReader();
+                while (okuyucu.Read())
+                {
+                    Ilac I = new Ilac();
+                    I.ID = okuyucu.GetInt32(0);
+                    I.Isim = okuyucu.GetString(1);
+                    I.SKT = okuyucu.GetString(2);
+                    I.Adet = okuyucu.GetInt32(3);
+                    I.BirimFiyat = okuyucu.GetInt32(4);
+                    ilaclar.Add(I);
+                }
+                return ilaclar;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+        public void IlacSil(int id)
+        {
+            try
+            {
+                komut.CommandText = "DELETE FROM Ilaclar WHERE ID=@id";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@id", id);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+        public bool ReceteOlustur(Recete R)
+        {
+            try
+            {
+                komut.CommandText = "INSERT INTO Receteler (IlaclarID,Isim,OlusturmaTarihi) VALUES(@ilaclarid,@isim,@olusturmatarihi)";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@ilaclarid",R.IlaclarID);
+                komut.Parameters.AddWithValue("@isim", R.Isim);
+                komut.Parameters.AddWithValue("@olusturmatarihi", R.Tarih);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+        public List<Recete> ReceteListele()
+        {
+            List<Recete> receteler = new List<Recete>();
+            try
+            {
+                komut.CommandText = "SELECT ID,IlaclarID,Isim,OlusturmaTarihi FROM Receteler";
+                komut.Parameters.Clear();
+                baglanti.Open();
+                SqlDataReader okuyucu = komut.ExecuteReader();
+                while (okuyucu.Read())
+                {
+                    Recete R = new Recete();
+                    R.ID = okuyucu.GetInt32(0);
+                    R.IlaclarID = okuyucu.GetInt32(1);
+                    R.Isim = okuyucu.GetString(2);
+                    R.Tarih = okuyucu.GetDateTime(3);
+                    receteler.Add(R);
+                }
+                return receteler;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+        public void ReceteSil(int id)
+        {
+            try
+            {
+                komut.CommandText = "DELETE FROM Receteler WHERE ID=@id";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@id", id);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
         #endregion
     }
-
 }

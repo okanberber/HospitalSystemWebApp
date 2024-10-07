@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4A3454B6-F987-4D9A-BAD2-05418B262F7B}</ProjectGuid>
+    <ProjectGuid>{25A368AA-5C4C-4FE2-9257-2BF7ED0DF6AE}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -16,7 +16,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44390</IISExpressSSLPort>
+    <IISExpressSSLPort>44368</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -68,54 +68,126 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
-    <Content Include="YoneticiPaneli\Css\DoktorCss.css" />
-    <Content Include="YoneticiPaneli\Css\GirisCss.css" />
-    <Content Include="YoneticiPaneli\Css\HastaCss.css" />
-    <Content Include="YoneticiPaneli\Css\YoneticiCss.css" />
-    <Content Include="YoneticiPaneli\DoktorIslemleri.aspx" />
-    <Content Include="YoneticiPaneli\HastaIslemleri.aspx" />
-    <Content Include="YoneticiPaneli\Resimler\medicine-symbol-logo-C5F32D7618-seeklogo.com.png" />
-    <Content Include="YoneticiPaneli\Resimler\pngwing.com.png" />
-    <Content Include="YoneticiPaneli\Resimler\vecteezy_ai-generated-national-doctors-day-advertisment-background_37247199.jpg" />
-    <Content Include="YoneticiPaneli\YoneticiDefault.aspx" />
-    <Content Include="YoneticiPaneli\YoneticiGiris.aspx" />
+    <Content Include="Yoneticiler\DoktorEkle.aspx" />
+    <Content Include="Yoneticiler\DoktorListele.aspx" />
+    <Content Include="Yoneticiler\EczaciEkle.aspx" />
+    <Content Include="Yoneticiler\EczaciListele.aspx" />
+    <Content Include="Yoneticiler\HastaEkle.aspx" />
+    <Content Include="Yoneticiler\HastaListele.aspx" />
+    <Content Include="Yoneticiler\IlacEkle.aspx" />
+    <Content Include="Yoneticiler\IlacListele.aspx" />
+    <Content Include="Yoneticiler\ReceteListele.aspx" />
+    <Content Include="Yoneticiler\ReceteOlustur.aspx" />
+    <Content Include="Yoneticiler\Resimler\medicine-symbol-logo-C5F32D7618-seeklogo.com.png" />
+    <Content Include="Yoneticiler\Resimler\pngwing.com.png" />
+    <Content Include="Yoneticiler\Resimler\vecteezy_ai-generated-national-doctors-day-advertisment-background_37247199.jpg" />
+    <Content Include="Yoneticiler\YoneticiCss\DoktorEkle.css" />
+    <Content Include="Yoneticiler\YoneticiCss\DoktorListeleCss.css" />
+    <Content Include="Yoneticiler\YoneticiCss\EczaciEkleCss.css" />
+    <Content Include="Yoneticiler\YoneticiCss\EczaciListeleCss.css" />
+    <Content Include="Yoneticiler\YoneticiCss\HastaEkleCss.css" />
+    <Content Include="Yoneticiler\YoneticiCss\HastaListeleCss.css" />
+    <Content Include="Yoneticiler\YoneticiCss\IlacEkleCss.css" />
+    <Content Include="Yoneticiler\YoneticiCss\IlacListeleCss.css" />
+    <Content Include="Yoneticiler\YoneticiCss\ReceteListeleCss.css" />
+    <Content Include="Yoneticiler\YoneticiCss\ReceteOlusturCss.css" />
+    <Content Include="Yoneticiler\YoneticiCss\YoneticiGirisCss.css" />
+    <Content Include="Yoneticiler\YoneticiCss\YoneticiMasterCss.css" />
+    <Content Include="Yoneticiler\YoneticiDefault.aspx" />
+    <Content Include="Yoneticiler\YoneticiGiris.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="YoneticiMaster.Master.cs">
-      <DependentUpon>YoneticiMaster.Master</DependentUpon>
+    <Compile Include="Yoneticiler\DoktorEkle.aspx.cs">
+      <DependentUpon>DoktorEkle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="YoneticiMaster.Master.designer.cs">
-      <DependentUpon>YoneticiMaster.Master</DependentUpon>
+    <Compile Include="Yoneticiler\DoktorEkle.aspx.designer.cs">
+      <DependentUpon>DoktorEkle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="YoneticiPaneli\DoktorIslemleri.aspx.cs">
-      <DependentUpon>DoktorIslemleri.aspx</DependentUpon>
+    <Compile Include="Yoneticiler\DoktorListele.aspx.cs">
+      <DependentUpon>DoktorListele.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="YoneticiPaneli\DoktorIslemleri.aspx.designer.cs">
-      <DependentUpon>DoktorIslemleri.aspx</DependentUpon>
+    <Compile Include="Yoneticiler\DoktorListele.aspx.designer.cs">
+      <DependentUpon>DoktorListele.aspx</DependentUpon>
     </Compile>
-    <Compile Include="YoneticiPaneli\HastaIslemleri.aspx.cs">
-      <DependentUpon>HastaIslemleri.aspx</DependentUpon>
+    <Compile Include="Yoneticiler\EczaciEkle.aspx.cs">
+      <DependentUpon>EczaciEkle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="YoneticiPaneli\HastaIslemleri.aspx.designer.cs">
-      <DependentUpon>HastaIslemleri.aspx</DependentUpon>
+    <Compile Include="Yoneticiler\EczaciEkle.aspx.designer.cs">
+      <DependentUpon>EczaciEkle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="YoneticiPaneli\YoneticiDefault.aspx.cs">
+    <Compile Include="Yoneticiler\EczaciListele.aspx.cs">
+      <DependentUpon>EczaciListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yoneticiler\EczaciListele.aspx.designer.cs">
+      <DependentUpon>EczaciListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yoneticiler\HastaEkle.aspx.cs">
+      <DependentUpon>HastaEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yoneticiler\HastaEkle.aspx.designer.cs">
+      <DependentUpon>HastaEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yoneticiler\HastaListele.aspx.cs">
+      <DependentUpon>HastaListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yoneticiler\HastaListele.aspx.designer.cs">
+      <DependentUpon>HastaListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yoneticiler\IlacEkle.aspx.cs">
+      <DependentUpon>IlacEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yoneticiler\IlacEkle.aspx.designer.cs">
+      <DependentUpon>IlacEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yoneticiler\IlacListele.aspx.cs">
+      <DependentUpon>IlacListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yoneticiler\IlacListele.aspx.designer.cs">
+      <DependentUpon>IlacListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yoneticiler\ReceteListele.aspx.cs">
+      <DependentUpon>ReceteListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yoneticiler\ReceteListele.aspx.designer.cs">
+      <DependentUpon>ReceteListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yoneticiler\ReceteOlustur.aspx.cs">
+      <DependentUpon>ReceteOlustur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yoneticiler\ReceteOlustur.aspx.designer.cs">
+      <DependentUpon>ReceteOlustur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yoneticiler\YoneticiDefault.aspx.cs">
       <DependentUpon>YoneticiDefault.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="YoneticiPaneli\YoneticiDefault.aspx.designer.cs">
+    <Compile Include="Yoneticiler\YoneticiDefault.aspx.designer.cs">
       <DependentUpon>YoneticiDefault.aspx</DependentUpon>
     </Compile>
-    <Compile Include="YoneticiPaneli\YoneticiGiris.aspx.cs">
+    <Compile Include="Yoneticiler\YoneticiGiris.aspx.cs">
       <DependentUpon>YoneticiGiris.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="YoneticiPaneli\YoneticiGiris.aspx.designer.cs">
+    <Compile Include="Yoneticiler\YoneticiGiris.aspx.designer.cs">
       <DependentUpon>YoneticiGiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yoneticiler\YoneticiMaster.Master.cs">
+      <DependentUpon>YoneticiMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yoneticiler\YoneticiMaster.Master.designer.cs">
+      <DependentUpon>YoneticiMaster.Master</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -126,11 +198,18 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="YoneticiMaster.Master" />
+    <Content Include="Yoneticiler\YoneticiMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Doktorlar\" />
+    <Folder Include="Eczacilar\" />
+    <Folder Include="Hastalar\" />
+    <Folder Include="Ilaclar\" />
+    <Folder Include="Receteler\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VeriErisimKatmani\VeriErisimKatmani.csproj">
-      <Project>{70fac79a-8dbc-4cc2-98cd-67120c0505d1}</Project>
+      <Project>{1721fce1-b7ce-405c-9994-9ff79d769bef}</Project>
       <Name>VeriErisimKatmani</Name>
     </ProjectReference>
   </ItemGroup>
@@ -147,9 +226,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50005</DevelopmentServerPort>
+          <DevelopmentServerPort>50062</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44390/</IISUrl>
+          <IISUrl>https://localhost:44368/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

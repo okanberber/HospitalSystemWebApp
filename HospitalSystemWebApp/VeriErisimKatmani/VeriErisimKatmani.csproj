@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{70FAC79A-8DBC-4CC2-98CD-67120C0505D1}</ProjectGuid>
+    <ProjectGuid>{1721FCE1-B7CE-405C-9994-9FF79D769BEF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>VeriErisimKatmani</RootNamespace>
@@ -42,9 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaglantiYollari.cs" />
-    <Compile Include="Doktorlar.cs" />
-    <Compile Include="Hastalar.cs" />
+    <Compile Include="Doktor.cs" />
+    <Compile Include="Eczaci.cs" />
+    <Compile Include="Hasta.cs" />
+    <Compile Include="Ilac.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recete.cs" />
     <Compile Include="VeriModeli.cs" />
     <Compile Include="Yonetici.cs" />
   </ItemGroup>
