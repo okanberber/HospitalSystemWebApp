@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DoktorMaster.master.cs" Inherits="HospitalSystemWebApp.Doktorlar.DoktorMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="DoktorCss/DoktorMasterCss.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+                <div class="ustcubuk">
+    <div class="anamenu">
+        <img style="float: left; width: 80px; padding-left: 10px;" src="../Yoneticiler/Resimler/medicine-symbol-logo-C5F32D7618-seeklogo.com.png" />
+        <h1 style="padding-top: 8px; font-size: 20pt; padding-left: 110px;">Hospital</h1>
+        <h1 style="font-size: 20pt; padding-left: 160px;">System</h1>
+    </div>
+    <div>
+        <asp:LinkButton ID="lbtn_cikis" runat="server" CssClass="cikisyap" OnClick="lbtn_cikis_Click">Çıkış Yap</asp:LinkButton>
+    </div>
+</div>
+
+<div class="navigasyon">
+    <a href="/Doktorlar/DoktorDefault.aspx">Ana Sayfa</a>
+    <hr />
+    <a href="/Islemler/HastaListele.aspx">Hasta Listele</a>
+    <a href="/Islemler/HastaEkle.aspx">Hasta Ekle</a>
+    <hr />
+    <a href="/Islemler/ReceteListele.aspx">Reçete Listele</a>
+    <a href="/Islemler/ReceteOlustur.aspx">Reçete Olustur</a>
+</div>
+        <div class="anaicerik">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

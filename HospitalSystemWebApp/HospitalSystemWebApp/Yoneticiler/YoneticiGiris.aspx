@@ -14,7 +14,7 @@
             <div class="satir">
                 <br />
                 <br />
-                <h1 style="color: mediumpurple">Yönetici Giriş</h1>
+                <h1 style="color: gold">Yönetici Giriş</h1>
             </div>
             <div class="satir">
                 <img style="width: 300px" src="Resimler/pngwing.com.png" />

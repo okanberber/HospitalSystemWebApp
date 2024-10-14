@@ -67,105 +67,191 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AnaSayfa.aspx" />
+    <Content Include="AnaSayfaCss.css" />
+    <Content Include="Doktorlar\DoktorCss\DoktorGirisCss.css" />
+    <Content Include="Doktorlar\DoktorCss\DoktorMasterCss.css" />
+    <Content Include="Doktorlar\DoktorDefault.aspx" />
+    <Content Include="Doktorlar\DoktorGiris.aspx" />
+    <Content Include="Eczacilar\EczaciDefault.aspx" />
+    <Content Include="Eczacilar\EczaciGiris.aspx" />
+    <Content Include="Eczacilar\EczaciGirisCss.css" />
+    <Content Include="Eczacilar\EczaciMaster.css" />
+    <Content Include="Islemler\DoktorDuzenle.aspx" />
+    <Content Include="Islemler\EczaciDuzenle.aspx" />
+    <Content Include="Islemler\HastaDuzenle.aspx" />
+    <Content Include="Islemler\IslemlerCss\DoktorDuzenleCss.css" />
+    <Content Include="Islemler\IslemlerCss\EczaciDuzenleCss.css" />
+    <Content Include="Islemler\IslemlerCss\HastaDuzenleCss.css" />
     <Content Include="Web.config" />
-    <Content Include="Yoneticiler\DoktorEkle.aspx" />
-    <Content Include="Yoneticiler\DoktorListele.aspx" />
-    <Content Include="Yoneticiler\EczaciEkle.aspx" />
-    <Content Include="Yoneticiler\EczaciListele.aspx" />
-    <Content Include="Yoneticiler\HastaEkle.aspx" />
-    <Content Include="Yoneticiler\HastaListele.aspx" />
-    <Content Include="Yoneticiler\IlacEkle.aspx" />
-    <Content Include="Yoneticiler\IlacListele.aspx" />
-    <Content Include="Yoneticiler\ReceteListele.aspx" />
-    <Content Include="Yoneticiler\ReceteOlustur.aspx" />
+    <Content Include="Islemler\DoktorEkle.aspx" />
+    <Content Include="Islemler\DoktorListele.aspx" />
+    <Content Include="Islemler\EczaciEkle.aspx" />
+    <Content Include="Islemler\EczaciListele.aspx" />
+    <Content Include="Islemler\HastaEkle.aspx" />
+    <Content Include="Islemler\HastaListele.aspx" />
+    <Content Include="Islemler\IlacEkle.aspx" />
+    <Content Include="Islemler\IlacListele.aspx" />
+    <Content Include="Islemler\ReceteListele.aspx" />
+    <Content Include="Islemler\ReceteOlustur.aspx" />
     <Content Include="Yoneticiler\Resimler\medicine-symbol-logo-C5F32D7618-seeklogo.com.png" />
     <Content Include="Yoneticiler\Resimler\pngwing.com.png" />
     <Content Include="Yoneticiler\Resimler\vecteezy_ai-generated-national-doctors-day-advertisment-background_37247199.jpg" />
-    <Content Include="Yoneticiler\YoneticiCss\DoktorEkle.css" />
-    <Content Include="Yoneticiler\YoneticiCss\DoktorListeleCss.css" />
-    <Content Include="Yoneticiler\YoneticiCss\EczaciEkleCss.css" />
-    <Content Include="Yoneticiler\YoneticiCss\EczaciListeleCss.css" />
-    <Content Include="Yoneticiler\YoneticiCss\HastaEkleCss.css" />
-    <Content Include="Yoneticiler\YoneticiCss\HastaListeleCss.css" />
-    <Content Include="Yoneticiler\YoneticiCss\IlacEkleCss.css" />
-    <Content Include="Yoneticiler\YoneticiCss\IlacListeleCss.css" />
-    <Content Include="Yoneticiler\YoneticiCss\ReceteListeleCss.css" />
-    <Content Include="Yoneticiler\YoneticiCss\ReceteOlusturCss.css" />
+    <Content Include="Islemler\IslemlerCss\DoktorEkle.css" />
+    <Content Include="Islemler\IslemlerCss\DoktorListeleCss.css" />
+    <Content Include="Islemler\IslemlerCss\EczaciEkleCss.css" />
+    <Content Include="Islemler\IslemlerCss\EczaciListeleCss.css" />
+    <Content Include="Islemler\IslemlerCss\HastaEkleCss.css" />
+    <Content Include="Islemler\IslemlerCss\HastaListeleCss.css" />
+    <Content Include="Islemler\IslemlerCss\IlacEkleCss.css" />
+    <Content Include="Islemler\IslemlerCss\IlacListeleCss.css" />
+    <Content Include="Islemler\IslemlerCss\ReceteListeleCss.css" />
+    <Content Include="Islemler\IslemlerCss\ReceteOlusturCss.css" />
     <Content Include="Yoneticiler\YoneticiCss\YoneticiGirisCss.css" />
     <Content Include="Yoneticiler\YoneticiCss\YoneticiMasterCss.css" />
     <Content Include="Yoneticiler\YoneticiDefault.aspx" />
     <Content Include="Yoneticiler\YoneticiGiris.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnaSayfa.aspx.cs">
+      <DependentUpon>AnaSayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.aspx.designer.cs">
+      <DependentUpon>AnaSayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doktorlar\DoktorDefault.aspx.cs">
+      <DependentUpon>DoktorDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doktorlar\DoktorDefault.aspx.designer.cs">
+      <DependentUpon>DoktorDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doktorlar\DoktorGiris.aspx.cs">
+      <DependentUpon>DoktorGiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doktorlar\DoktorGiris.aspx.designer.cs">
+      <DependentUpon>DoktorGiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Doktorlar\DoktorMaster.Master.cs">
+      <DependentUpon>DoktorMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doktorlar\DoktorMaster.Master.designer.cs">
+      <DependentUpon>DoktorMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Eczacilar\EczaciDefault.aspx.cs">
+      <DependentUpon>EczaciDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Eczacilar\EczaciDefault.aspx.designer.cs">
+      <DependentUpon>EczaciDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Eczacilar\EczaciGiris.aspx.cs">
+      <DependentUpon>EczaciGiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Eczacilar\EczaciGiris.aspx.designer.cs">
+      <DependentUpon>EczaciGiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Eczacilar\EczaciMaster.Master.cs">
+      <DependentUpon>EczaciMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Eczacilar\EczaciMaster.Master.designer.cs">
+      <DependentUpon>EczaciMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Islemler\DoktorDuzenle.aspx.cs">
+      <DependentUpon>DoktorDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Islemler\DoktorDuzenle.aspx.designer.cs">
+      <DependentUpon>DoktorDuzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Islemler\EczaciDuzenle.aspx.cs">
+      <DependentUpon>EczaciDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Islemler\EczaciDuzenle.aspx.designer.cs">
+      <DependentUpon>EczaciDuzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Islemler\HastaDuzenle.aspx.cs">
+      <DependentUpon>HastaDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Islemler\HastaDuzenle.aspx.designer.cs">
+      <DependentUpon>HastaDuzenle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Yoneticiler\DoktorEkle.aspx.cs">
+    <Compile Include="Islemler\DoktorEkle.aspx.cs">
       <DependentUpon>DoktorEkle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Yoneticiler\DoktorEkle.aspx.designer.cs">
+    <Compile Include="Islemler\DoktorEkle.aspx.designer.cs">
       <DependentUpon>DoktorEkle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Yoneticiler\DoktorListele.aspx.cs">
+    <Compile Include="Islemler\DoktorListele.aspx.cs">
       <DependentUpon>DoktorListele.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Yoneticiler\DoktorListele.aspx.designer.cs">
+    <Compile Include="Islemler\DoktorListele.aspx.designer.cs">
       <DependentUpon>DoktorListele.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Yoneticiler\EczaciEkle.aspx.cs">
+    <Compile Include="Islemler\EczaciEkle.aspx.cs">
       <DependentUpon>EczaciEkle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Yoneticiler\EczaciEkle.aspx.designer.cs">
+    <Compile Include="Islemler\EczaciEkle.aspx.designer.cs">
       <DependentUpon>EczaciEkle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Yoneticiler\EczaciListele.aspx.cs">
+    <Compile Include="Islemler\EczaciListele.aspx.cs">
       <DependentUpon>EczaciListele.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Yoneticiler\EczaciListele.aspx.designer.cs">
+    <Compile Include="Islemler\EczaciListele.aspx.designer.cs">
       <DependentUpon>EczaciListele.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Yoneticiler\HastaEkle.aspx.cs">
+    <Compile Include="Islemler\HastaEkle.aspx.cs">
       <DependentUpon>HastaEkle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Yoneticiler\HastaEkle.aspx.designer.cs">
+    <Compile Include="Islemler\HastaEkle.aspx.designer.cs">
       <DependentUpon>HastaEkle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Yoneticiler\HastaListele.aspx.cs">
+    <Compile Include="Islemler\HastaListele.aspx.cs">
       <DependentUpon>HastaListele.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Yoneticiler\HastaListele.aspx.designer.cs">
+    <Compile Include="Islemler\HastaListele.aspx.designer.cs">
       <DependentUpon>HastaListele.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Yoneticiler\IlacEkle.aspx.cs">
+    <Compile Include="Islemler\IlacEkle.aspx.cs">
       <DependentUpon>IlacEkle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Yoneticiler\IlacEkle.aspx.designer.cs">
+    <Compile Include="Islemler\IlacEkle.aspx.designer.cs">
       <DependentUpon>IlacEkle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Yoneticiler\IlacListele.aspx.cs">
+    <Compile Include="Islemler\IlacListele.aspx.cs">
       <DependentUpon>IlacListele.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Yoneticiler\IlacListele.aspx.designer.cs">
+    <Compile Include="Islemler\IlacListele.aspx.designer.cs">
       <DependentUpon>IlacListele.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Yoneticiler\ReceteListele.aspx.cs">
+    <Compile Include="Islemler\ReceteListele.aspx.cs">
       <DependentUpon>ReceteListele.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Yoneticiler\ReceteListele.aspx.designer.cs">
+    <Compile Include="Islemler\ReceteListele.aspx.designer.cs">
       <DependentUpon>ReceteListele.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Yoneticiler\ReceteOlustur.aspx.cs">
+    <Compile Include="Islemler\ReceteOlustur.aspx.cs">
       <DependentUpon>ReceteOlustur.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Yoneticiler\ReceteOlustur.aspx.designer.cs">
+    <Compile Include="Islemler\ReceteOlustur.aspx.designer.cs">
       <DependentUpon>ReceteOlustur.aspx</DependentUpon>
     </Compile>
     <Compile Include="Yoneticiler\YoneticiDefault.aspx.cs">
@@ -191,6 +277,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Doktorlar\DoktorMaster.Master" />
+    <Content Include="Eczacilar\EczaciMaster.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -200,13 +288,7 @@
     </None>
     <Content Include="Yoneticiler\YoneticiMaster.Master" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Doktorlar\" />
-    <Folder Include="Eczacilar\" />
-    <Folder Include="Hastalar\" />
-    <Folder Include="Ilaclar\" />
-    <Folder Include="Receteler\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\VeriErisimKatmani\VeriErisimKatmani.csproj">
       <Project>{1721fce1-b7ce-405c-9994-9ff79d769bef}</Project>

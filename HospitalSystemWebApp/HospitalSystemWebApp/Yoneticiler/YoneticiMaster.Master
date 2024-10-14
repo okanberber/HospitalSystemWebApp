@@ -13,7 +13,7 @@
     <form id="form1" runat="server">
         <div class="ustcubuk">
     <div class="anamenu">
-        <img style="float: left; width: 80px; padding-left: 10px;" src="Resimler/medicine-symbol-logo-C5F32D7618-seeklogo.com.png" />
+        <img style="float: left; width: 80px; padding-left: 10px;" src="/Yoneticiler/Resimler/medicine-symbol-logo-C5F32D7618-seeklogo.com.png" />
         <h1 style="padding-top: 8px; font-size: 20pt; padding-left: 110px;">Hospital</h1>
         <h1 style="font-size: 20pt; padding-left: 160px;">System</h1>
     </div>
@@ -23,22 +23,22 @@
 </div>
 
 <div class="navigasyon">
-    <a href="YoneticiDefault.aspx">Ana Sayfa</a>
+    <a href="/Yoneticiler/YoneticiDefault.aspx">Ana Sayfa</a>
     <hr />
-    <a href="DoktorListele.aspx">Doktor Listele</a>
-    <a href="DoktorEkle.aspx">Doktor Ekle</a>
+    <a href="/Islemler/DoktorListele.aspx">Doktor Listele</a>
+    <a href="/Islemler/DoktorEkle.aspx">Doktor Ekle</a>
     <hr />
-    <a href="HastaListele.aspx">Hasta Listele</a>
-    <a href="HastaEkle.aspx">Hasta Ekle</a>
+    <a href="/Islemler/HastaListele.aspx">Hasta Listele</a>
+    <a href="/Islemler/HastaEkle.aspx">Hasta Ekle</a>
     <hr />
-    <a href="EczaciListele.aspx">Eczacı Listele</a>
-    <a href="EczaciEkle.aspx">Eczacı Ekle</a>
+    <a href="/Islemler/EczaciListele.aspx">Eczacı Listele</a>
+    <a href="/Islemler/EczaciEkle.aspx">Eczacı Ekle</a>
     <hr />
-    <a href="ReceteListele.aspx">Reçete Listele</a>
-    <a href="ReceteOlustur.aspx">Reçete Olustur</a>
+    <a href="/Islemler/ReceteListele.aspx">Reçete Listele</a>
+    <a href="/Islemler/ReceteOlustur.aspx">Reçete Olustur</a>
     <hr />
-    <a href="IlacListele.aspx">İlaç Listele</a>
-    <a href="IlacEkle.aspx">İlaç Ekle</a>
+    <a href="/Islemler/IlacListele.aspx">İlaç Listele</a>
+    <a href="/Islemler/IlacEkle.aspx">İlaç Ekle</a>
 </div>
         <div class="anaicerik">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
